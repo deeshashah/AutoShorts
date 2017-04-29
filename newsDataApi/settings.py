@@ -25,7 +25,7 @@ SECRET_KEY = 'ac=9apmp05^*-vx6nd5ze#_-w=3m)ixkz^_ayh0$id5ph5p%t9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['newsdataapi.herokuapp.com']
 
 
 # Application definition
