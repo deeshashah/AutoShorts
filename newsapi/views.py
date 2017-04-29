@@ -18,7 +18,11 @@ def latestnews(request):
 	article_data = []
 	for item in data["articles"]:
 		mid_dictionary = {}
-		if(n >10):
+		if(type(item["title"])=="unicode"):
+                title = unicodedata.normalize('NFKD', item["title"]).encode('ascii','ignore')
+            else : 
+                title = item["title"]
+		if(len(title) >10):
 			mid_dictionary["title"] = item["title"]
 			mid_dictionary["url"] = item["url"]
 			mid_dictionary["urlToImage"] = item["urlToImage"]
