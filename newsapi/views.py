@@ -18,14 +18,15 @@ def latestnews(request):
 	article_data = []
 	for item in data["articles"]:
 		mid_dictionary = {}
-		mid_dictionary["title"] = item["title"]
-		mid_dictionary["url"] = item["url"]
-		mid_dictionary["urlToImage"] = item["urlToImage"]
-		# print item["url"]
-		# print "************"
-		sc = Scraper()
-		mid_dictionary["data"] = sc.scrape_mirror(item["url"])
-		article_data.append(mid_dictionary)
+		if(n >10):
+			mid_dictionary["title"] = item["title"]
+			mid_dictionary["url"] = item["url"]
+			mid_dictionary["urlToImage"] = item["urlToImage"]
+			# print item["url"]
+			# print "************"
+			sc = Scraper()
+			mid_dictionary["data"] = sc.scrape_mirror(item["url"])
+			article_data.append(mid_dictionary)
 
 	response_dictionary["articles"] = article_data
 	
