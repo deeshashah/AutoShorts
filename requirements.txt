@@ -10,7 +10,6 @@ gunicorn==19.6.0
 jsonrpc==1.2
 matplotlib==2.0.0
 networkx==1.11
-nlgserv==0.2.4
 nltk==3.2.1
 numpy==1.11.1
 pexpect==4.2.1
