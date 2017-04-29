@@ -8,7 +8,6 @@ functools32==3.2.3.post2
 graphviz==0.5.2
 gunicorn==19.6.0
 jsonrpc==1.2
-kenlm==0.0.0
 matplotlib==2.0.0
 networkx==1.11
 nlgserv==0.2.4
