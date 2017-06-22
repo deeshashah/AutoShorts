@@ -1,0 +1,32 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  h2 {
+    font-weight: 200;
+  }
+
+  .card-content{
+	font-size: 1.3rem;  	
+  }
+
+  .detail-modal{
+  	max-height: 80% !important;
+  }
+
+@media only screen and (min-width: 1024px){
+  .modal{
+  	width: 80% ;
+  	height: 80% !important;
+  }
+}
+
+.loginForm{
+  margin-top:3em;  
+}

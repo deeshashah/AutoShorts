@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Autoshorts</title>
+
+     {% load static %}
+    
+    <link href="{% static "css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "css/customStyle.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <style type="text/css">
+    .waves-effect
+    {
+      
+      font-size: 18px;
+    }
+    #loginbutton
+    {
+      margin-top: 70px;
+      margin-bottom: 20px;
+      padding-right: 46px;
+      padding-left: 46px;
+    }
+  </style>
+  <body>
+  <main>
+    <nav class="blue darken-3" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Autoshorts</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+          </ul>
+
+         </div>
+      </nav> 
+      <div class="container">
+        <center><h2>Autoshorts</h2></center>
+        <center><h5>News made better</h5></center>
+      </div>
+      
+  <center><a class="waves-effect waves-light btn-large" id= "loginbutton" href="login/">Login</a></a><br>
+  <a class="waves-effect waves-light btn-large" href="register/">Register</a></center>
+  </main>
+   <footer class="page-footer blue darken-3">
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job.</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="footer-copyright">
+        <div class="container">
+          Design and Developed by <a class="orange-text text-lighten-3" href="http://eunotech.com">Eunotech</a>
+        </div>
+      </div>
+    </footer>  
+
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static "js/materialize.js" %}"></script>
+    <script src= "{% static "js/init.js" %}"></script>
+    <script src="{% static "js/customScript.js" %}"></script>
+
+  </body>
+  </html>

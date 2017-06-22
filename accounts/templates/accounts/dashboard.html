@@ -1,0 +1,92 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Dashboard</title>
+
+		 {% load static %}
+    
+    <link href="{% static "css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "css/customStyle.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+	<body>
+	<main>
+			<nav class="blue darken-3" role="navigation">
+				<div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Autoshorts</a>
+					<ul class="right">
+						<li><a href="/logout/">Log Out</a></li>
+					</ul>
+
+					<!-- <ul id="nav-mobile" class="side-nav">
+						<li><a href="/logout/">Log Out</a></li>
+					</ul> -->
+					
+				</div>
+			</nav> 
+			<div class="container">
+				<center><h2>Dashboard</h2>
+				<h5>See all the latest news in one place</h5></center>
+			</div>
+		<!-- 	<div class="container"> -->
+				<div class="row">
+				{% for key,value in main_dict.iteritems %}
+					<div class="col l3 m4 s12">
+						<div class="card medium sticky-action  hoverable">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="{{ value.image }}"/>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">{{value.title}}
+																<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M9 5.5c.83 0 1.5-.67 1.5-1.5S9.83 2.5 9 2.5 7.5 3.17 7.5 4 8.17 5.5 9 5.5zm0 2c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5zm0 5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>								</span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">{{value.title}}
+								<p class="flow-text card-content">{{value.summary}}
+							</p>
+							</div>
+							<div class="card-action">
+								<a class="waves-effect waves-light btn" href="#{{key}}">See More</a>
+							</div>
+						</div>	
+					</div>
+					{% endfor %}
+				</div>
+
+		  <!-- Modal Structure -->
+		  {% for key,value in main_dict.iteritems %}
+		  <div id="{{key}}" class="modal detail-modal modal-fixed-footer bottom-sheet">
+		    <div class="modal-content">
+		      <h4>{{value.title}}</h4>
+		      <div > 
+			     <center> <img class="responsive-img" src="{{ value.image }}" style="height: 300px" /></center>
+		      </div>
+		      <p class="flow-text card-content">
+						{{value.data}}
+						</p>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		    </div>
+		  </div>
+		  {% endfor %}
+
+		</main>
+		<footer class="page-footer blue darken-3">
+			<div class="footer-copyright">
+				<div class="container">
+					Design and Developed by <a class="orange-text text-lighten-3" href="http://eunotech.com">Eunotech</a>
+				</div>
+			</div>
+		</footer>
+
+	
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static "js/materialize.js" %}"></script>
+    <script src= "{% static "js/init.js" %}"></script>
+    <script src="{% static "js/customScript.js" %}"></script>
+
+	</body>
+	</html>

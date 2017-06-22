@@ -1,1 +1,2 @@
-web: gunicorn newsDataApi.wsgi --log-file -
+web: gunicorn newsFrontEnd.wsgi --log-file -
+

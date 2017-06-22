@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Register</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% load static %}
+    
+    <link href="{% static "css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "css/customStyle.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+    <main>
+      <nav class="blue darken-3" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Autoshorts</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav> 
+
+      <div class="container">
+        <center><h2>Register</h2></center>
+      </div>
+
+      <div class="row">
+        <form class="col s12 loginForm" method="post" action="/register/">
+        {% csrf_token %}
+          <div class="row">
+          <div class="input-field col s12 m6 offset-m3">
+              <input  id="first_name" type="text" name = "username" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="row">
+            <div class="input-field col s12 m6 offset-m3">
+              <input  id="first_name" type="text" name = "email" class="validate">
+              <label for="first_name">E-mail</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6 offset-m3">
+                <input id="password" name = "password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row center">
+              <button class="btn-large waves-effect waves-light" type="submit" name="action">Submit
+                 <i class="material-icons right">send</i>
+               </button>
+             </div>
+          </form>
+        </div>
+
+
+
+      </main>
+      <footer class="page-footer blue darken-3">
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job.</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="footer-copyright">
+        <div class="container">
+          Design and Developed by <a class="orange-text text-lighten-3" href="http://eunotech.com">Eunotech</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static "js/materialize.js" %}"></script>
+    <script src= "{% static "js/init.js" %}"></script>
+    <script src="{% static "js/customScript.js" %}"></script>
+
+  </body>
+  </html>
