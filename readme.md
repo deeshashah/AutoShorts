@@ -7,18 +7,18 @@ The application is hosted here : [Autoshorts](https://autoshorts.herokuapp.com/)
 ### Working 
 
 1. The main page : 
-<kbd>![normal](https://raw.githubusercontent.com/rikenshah/what-the-image/master/screenshots/1.png)</kbd>
+<kbd>![normal](https://raw.githubusercontent.com/deeshashah/Autoshorts/master/screenshots/1.png)</kbd>
 2. User has to register :
-<kbd>![normal](https://raw.githubusercontent.com/rikenshah/what-the-image/master/screenshots/3.png)</kbd>
+<kbd>![normal](https://raw.githubusercontent.com/deeshashah/Autoshorts/master/screenshots/3.png)</kbd>
 3. User has to login :
-<kbd>![normal](https://raw.githubusercontent.com/rikenshah/what-the-image/master/screenshots/2.png)</kbd>
+<kbd>![normal](https://raw.githubusercontent.com/deeshashah/Autoshorts/master/screenshots/2.png)</kbd>
 4. The dashboard : 
    Here, all the latest news are displayed.
-   <kbd>![normal](https://raw.githubusercontent.com/rikenshah/what-the-image/master/screenshots/4.png)</kbd>
+   <kbd>![normal](https://raw.githubusercontent.com/deeshashah/Autoshorts/master/screenshots/4.png)</kbd>
 5. Short summaries can be viewed :
-<kbd>![normal](https://raw.githubusercontent.com/rikenshah/what-the-image/master/screenshots/5.png)</kbd>
+<kbd>![normal](https://raw.githubusercontent.com/deeshashah/Autoshorts/master/screenshots/5.png)</kbd>
 6. The full article :
-<kbd>![normal](https://raw.githubusercontent.com/rikenshah/what-the-image/master/screenshots/6.png)</kbd>
+<kbd>![normal](https://raw.githubusercontent.com/deeshashah/Autoshorts/master/screenshots/6.png)</kbd>
 
 ### Running this application 
 1. You need to first set up a python virtual environment where all the dependencies will be installed. If you are not aware of virtual environment, visit here [Setting up Python virtual environment](https://rikenshah.github.io/articles/setting-up-python-environment/)
