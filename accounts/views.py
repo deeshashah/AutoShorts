@@ -85,8 +85,6 @@ def dashboard(request):
                 ti = unicodedata.normalize('NFKD', item["title"]).encode('ascii','ignore')
             else : 
                 ti = item["title"]
-            print ti
-            print len(ti)
             n = len(ti)
             if(n >10):
                 mid_dictionary["title"] = ti
